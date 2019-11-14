@@ -10,12 +10,12 @@ export class ListServiceService {
   constructor(private http: HttpClient) { }
 
   getMenuLists() {
-    return this.http.get('http://localhost:3000/lms/lists/tab')
+    return this.http.get('http://localhost:3000/lists/tab')
   }
-  
+
   getList(list_id) {
-    return this.http.get('http://localhost:3000/lms/lists/'+list_id)
+    return this.http.get('http://localhost:3000/lists/'+list_id)
   }
-    
-  
+
+
 }
