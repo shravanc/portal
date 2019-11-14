@@ -1,0 +1,15 @@
+<div *ngFor="let list of lists$">
+
+  <div *ngIf="list.layouts[0]['title'] == 'carousal-one-layouts'">
+    <app-carousal-one-layouts [carousel_list_id]="list.id"></app-carousal-one-layouts>
+  </div>
+
+  <div *ngIf="list.layouts[0]['title'] == 'gallery-one'">
+    <app-gallery-one [carousel_list_id]="list.id"></app-gallery-one>
+  </div>
+
+  <div *ngIf="list.layouts[0]['title'] == 'vertical-cards-layouts'">
+    <app-vertical-cards-layouts [carousel_list_id]="list.id"></app-vertical-cards-layouts>
+  </div>
+
+</div>

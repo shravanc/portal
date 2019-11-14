@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { CarousalOneLayoutsComponent } from './carousal-one-layouts/carousal-one-layouts.component';
+import { WebsiteBodyComponent } from './website-body/website-body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    CarousalOneLayoutsComponent,
+    WebsiteBodyComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

@@ -15,11 +15,14 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log("-------2-------")
     this.list_data_service.getMenuLists().subscribe(
+
       data => {
         this.lists$ = data['sublists'];
         this.page_list_id = this.lists$[0].slug;
     });
+    console.log("***********************")
   }
 
 }
