@@ -1,11 +1,6 @@
-
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
-import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 const routes: Routes = [
@@ -16,13 +11,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),  BrowserModule,   MDBBootstrapModule.forRoot()],
-  schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
-  bootstrap: [AppComponent],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-
-
