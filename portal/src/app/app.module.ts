@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { CarousalOneLayoutsComponent } from './carousal-one-layouts/carousal-one-layouts.component';
 import { WebsiteBodyComponent } from './website-body/website-body.component';
+import { GalleryOneComponent } from './gallery-one/gallery-one.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WebsiteBodyComponent } from './website-body/website-body.component';
     FooterComponent,
     LoginComponent,
     CarousalOneLayoutsComponent,
-    WebsiteBodyComponent
+    WebsiteBodyComponent,
+    GalleryOneComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
