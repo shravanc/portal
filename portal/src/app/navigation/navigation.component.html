@@ -2,6 +2,7 @@
   <mdb-navbar-brand>
     <a class="logo navbar-brand" href="#"><strong>StreamFlix</strong></a>
   </mdb-navbar-brand>
+
   <links>
     <ul class="navbar-nav" *ngFor="let list of lists$">
       <li class="nav-item waves-light" mdbWavesEffect>
@@ -13,7 +14,7 @@
 <!--    <app-login></app-login>-->
 <!--  </links>-->
 </mdb-navbar>
-<app-website-body *ngIf="page_list_id" [page_list_id]="page_list_id"></app-website-body>
+  <app-website-body *ngIf="page_list_id" [page_list_id]="page_list_id"></app-website-body>
 
 
 
