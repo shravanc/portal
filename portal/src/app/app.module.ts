@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { CarousalOneLayoutsComponent } from './carousal-one-layouts/carousal-one-layouts.component';
 import { WebsiteBodyComponent } from './website-body/website-body.component';
 import { GalleryOneComponent } from './gallery-one/gallery-one.component';
+import { VerticalCardsLayoutsComponent } from './vertical-cards-layouts/vertical-cards-layouts.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GalleryOneComponent } from './gallery-one/gallery-one.component';
     LoginComponent,
     CarousalOneLayoutsComponent,
     WebsiteBodyComponent,
-    GalleryOneComponent
+    GalleryOneComponent,
+    VerticalCardsLayoutsComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
