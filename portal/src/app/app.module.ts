@@ -32,7 +32,7 @@ import { VerticalCardsLayoutsComponent } from './vertical-cards-layouts/vertical
     HttpClientModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

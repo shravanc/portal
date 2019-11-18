@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ListServiceService } from '../list-service.service';
 
 import { NavigationComponent } from './navigation.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+//import {HttpClientModule} from '@angular/common/http';
 
 describe('NavigationComponent', () => {
   let component: NavigationComponent;
@@ -8,7 +13,19 @@ describe('NavigationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationComponent ]
+      imports: [
+        HttpClientTestingModule,
+        MDBBootstrapModule.forRoot() // <-- this line is important
+        
+        ],
+      declarations: [ NavigationComponent ],
+      providers : [ListServiceService,
+        ],
+      schemas: [
+
+        NO_ERRORS_SCHEMA // <-- this line is also important
+        
+        ]
     })
     .compileComponents();
   }));
@@ -16,7 +33,7 @@ describe('NavigationComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    //fixture.autoDetectChanges();
   });
 
   it('should create', () => {
