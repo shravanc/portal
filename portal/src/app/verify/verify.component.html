@@ -9,25 +9,14 @@
 
 <!-- Horizontal material form -->
 <form>
-  <!-- Grid row -->
-  <div class="form-group row">
-    <!-- Material input -->
-    <label for="inputEmail3MD" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <div class="md-form mb-0">
-        <input type="text" class="form-control" ng-model="username" placeholder="Username">
-      </div>
-    </div>
-  </div>
-  <!-- Grid row -->
 
   <!-- Grid row -->
   <div class="form-group row">
     <!-- Material input -->
     <label for="inputPassword3MD" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <div class="md-form mt-0">
-        <input type="password" class="form-control" ng-model="password" placeholder="Password">
+      <div class="md-form mb-0">
+        <input type="text" class="form-control" ng-model="token" placeholder="Token">
       </div>
     </div>
   </div>
@@ -36,7 +25,7 @@
   <!-- Grid row -->
   <div class="form-group row">
     <div class="col-sm-10">
-      <button mdbBtn color="default" class="waves-light" mdbWavesEffect (click)="loginUser($event)">Sign in</button>
+      <button mdbBtn color="default" class="waves-light" mdbWavesEffect (click)="verifyUser($event)">Verify in</button>
 
     </div>
   </div>

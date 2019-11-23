@@ -19,6 +19,8 @@ import { GalleryTwoComponent } from './gallery-two/gallery-two.component';
 import { GalleryThreeComponent } from './gallery-three/gallery-three.component';
 import { ProjectOneLayoutsComponent } from './project-one-layouts/project-one-layouts.component';
 import { ProjectTwoLayoutsComponent } from './project-two-layouts/project-two-layouts.component';
+import { RegisterComponent } from './register/register.component';
+import { VerifyComponent } from './verify/verify.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ProjectTwoLayoutsComponent } from './project-two-layouts/project-two-la
     GalleryTwoComponent,
     GalleryThreeComponent,
     ProjectOneLayoutsComponent,
-    ProjectTwoLayoutsComponent
+    ProjectTwoLayoutsComponent,
+    RegisterComponent,
+    VerifyComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

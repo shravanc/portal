@@ -3,22 +3,24 @@ import { AuthService } from '../auth.service';
 
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
   constructor(private user_service: AuthService) { }
 
   ngOnInit() {
   }
 
-  username = ""
-  password = ""
-  loginUser(event) {
+  username = "";
+  email = "";
+  password = "";
+
+  registerUser(event) {
     event.preventDefault();
-    this.user_service.login(this.username, this.password).subscribe(
+    this.user_service.register(this.username, this.password, this.email).subscribe(
       data => {
         console.log("===============")
         console.log(event)
@@ -28,4 +30,3 @@ export class LoginComponent implements OnInit {
   }
 
 }
-
