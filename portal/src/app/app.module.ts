@@ -13,6 +13,12 @@ import { CarousalOneLayoutsComponent } from './carousal-one-layouts/carousal-one
 import { WebsiteBodyComponent } from './website-body/website-body.component';
 import { GalleryOneComponent } from './gallery-one/gallery-one.component';
 import { VerticalCardsLayoutsComponent } from './vertical-cards-layouts/vertical-cards-layouts.component';
+import { CarousalTwoLayoutsComponent } from './carousal-two-layouts/carousal-two-layouts.component';
+import { CarousalThreeLayoutsComponent } from './carousal-three-layouts/carousal-three-layouts.component';
+import { GalleryTwoComponent } from './gallery-two/gallery-two.component';
+import { GalleryThreeComponent } from './gallery-three/gallery-three.component';
+import { ProjectOneLayoutsComponent } from './project-one-layouts/project-one-layouts.component';
+import { ProjectTwoLayoutsComponent } from './project-two-layouts/project-two-layouts.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { VerticalCardsLayoutsComponent } from './vertical-cards-layouts/vertical
     CarousalOneLayoutsComponent,
     WebsiteBodyComponent,
     GalleryOneComponent,
-    VerticalCardsLayoutsComponent
+    VerticalCardsLayoutsComponent,
+    CarousalTwoLayoutsComponent,
+    CarousalThreeLayoutsComponent,
+    GalleryTwoComponent,
+    GalleryThreeComponent,
+    ProjectOneLayoutsComponent,
+    ProjectTwoLayoutsComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
