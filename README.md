@@ -11,6 +11,9 @@ npm install -g @angular/cli
 # Inside Cloned directory:
 
 npm i angular-bootstrap-md --save
+
 npm install -–save chart.js@2.5.0 font-awesome hammerjs
 
 ng serve --open
+
+ng serve --host 0.0.0.0 --disable-host-check

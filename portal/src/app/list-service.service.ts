@@ -11,6 +11,8 @@ export class ListServiceService {
 
 
   host = "http://amazon.stream.com";
+  //host = "http://netflix.stream.com";
+
   auth = "?auth_token=abc";
   base_url = this.host + ':3000/admin/lists';
   url = "";

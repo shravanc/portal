@@ -4,8 +4,24 @@
     <app-carousal-one-layouts [carousel_list_id]="list.id"></app-carousal-one-layouts>
   </div>
 
-  <div *ngIf="list.layouts[0]['title'] == 'gallery-one'">
-    <app-gallery-one [carousel_list_id]="list.id"></app-gallery-one>
+  <div *ngIf="list.layouts[0]['title'] == 'carousal-two-layouts'">
+    <app-carousal-two-layouts [carousel_list_id]="list.id"></app-carousal-two-layouts>
+  </div>
+
+  <div *ngIf="list.layouts[0]['title'] == 'project-one-layouts'">
+    <app-project-one-layouts [carousel_list_id]="list.id"></app-project-one-layouts>
+  </div>
+
+  <div *ngIf="list.layouts[0]['title'] == 'project-two-layouts'">
+    <app-project-two-layouts [carousel_list_id]="list.id"></app-project-two-layouts>
+  </div>
+
+  <div *ngIf="list.layouts[0]['title'] == 'project-two-layouts'">
+    <app-project-two-layouts [carousel_list_id]="list.id"></app-project-two-layouts>
+  </div>
+
+  <div *ngIf="list.layouts[0]['title'] == 'gallery-two'">
+    <app-gallery-two [carousel_list_id]="list.id"></app-gallery-two>
   </div>
 
   <div *ngIf="list.layouts[0]['title'] == 'vertical-cards-layouts'">
